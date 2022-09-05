@@ -1,7 +1,9 @@
 // Entity Driver
 
 Driver {
+
   id : long { @Id } ;
+
   firstName : string { @MaxLen(20) } ;
   lastName  : string { @MaxLen(20) };
   birthDate : date { @Past } ;

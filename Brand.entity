@@ -4,7 +4,11 @@
 // General Motors : Opel, Chevrolet
 
 Brand {
+
+  // attributes 
   code : string { @Id @MaxLen(3) } ; // eg : "Pgt", "Ctr", etc
-  name : string { @NotNull @NotEmpty @MaxLen(20) } ;  
-  company : Company  ; 
+  name : string { @NotNull @NotEmpty @MaxLen(20) } ; 
+  
+  // links 
+  company : Company  ; // a Brand belongs to a Company
 }
