@@ -3,5 +3,5 @@
 
 Company {
   id : short { @Id  @Min(1) } ; 
-  name : string { @NotNull @NotEmpty @SizeMax(20) } ; 
+  name : string { @NotNull @NotEmpty @MaxLen(20) } ; 
 }

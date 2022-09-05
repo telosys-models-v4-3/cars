@@ -2,8 +2,8 @@
 
 Driver {
   id : long { @Id } ;
-  firstName : string { @SizeMax(20) } ;
-  lastName : string { @SizeMax(20) };
+  firstName : string { @MaxLen(20) } ;
+  lastName  : string { @MaxLen(20) };
   birthDate : date { @Past } ;
   certified : boolean ; 
 }
