@@ -5,7 +5,7 @@ Car {
   // attributes
   id : int { @Id} ;
   name  : string  { @MaxLen(40) } ; 
-  year  : short { @Min(1900) @Max(2020) } ;
+  releaseYear  : short { @Min(1900) @Max(2050) } ;
   price : float { @Min( 500) @Max(99999) };
   
   // links ("to one")

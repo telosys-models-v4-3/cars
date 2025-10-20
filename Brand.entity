@@ -10,5 +10,5 @@ Brand {
   name : string { @NotNull @NotEmpty @MaxLen(20) } ; 
   
   // links 
-  company : Company  ; // a Brand belongs to a Company
+  company : Company ; // a Brand belongs to a Company 
 }
