@@ -6,9 +6,10 @@ Car {
   id : int { @Id} ;
   name  : string  { @MaxLen(40) } ; 
   releaseYear  : short { @Min(1900) @Max(2050) } ;
-  price : float { @Min( 500) @Max(99999) };
+  price : float { @Min( 500) @Max(99999) @DbName(unit_price) };
   
   // links ("to one")
-  brand  : Brand ;
-  driver : Driver ;
+  brand   : Brand ;
+  driver1 : Driver ;
+  driver2 : Driver ;
 }
